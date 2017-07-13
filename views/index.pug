@@ -1,0 +1,19 @@
+//Created by cardumen on 13-07-17.
+
+doctype html
+html
+    head
+        link(type='text/css', rel='stylesheet', href='/site.css')
+        |
+        title Enviar notificaciones
+    body
+        .login-page
+            .form
+                form.login-form(action="/push" method="POST" enctype="json")
+                    input(type='text', placeholder='Titulo')
+                    |
+                    input(type='text', placeholder='Descriptcion')
+                    |
+                    input(type='text', placeholder='Url de imagen')
+                    |
+                    input(type="submit" value="Enviar notificación")
